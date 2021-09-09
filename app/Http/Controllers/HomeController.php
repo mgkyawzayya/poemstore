@@ -37,7 +37,7 @@ class HomeController extends Controller
      */
     public function home()
     {
-        $orders = Order::count();
+        $orders = Order::where('accepted', '=', true)->count();
         $pending_orders = Order::where('accepted', '=', false)->count();
         $total_price = Order::where('accepted', '=', true)->sum('price');
         return view('index', compact(['orders', 'pending_orders', 'total_price']));
