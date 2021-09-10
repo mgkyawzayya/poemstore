@@ -69,11 +69,11 @@
                                                 </tr>
                                             </thead>
                                             <tbody class="bg-white divide-y divide-gray-100">
-                                                @foreach ($orders as $order)
+                                                @foreach ($orders as $key => $order)
                                                 <tr>
                                                     <td
                                                         class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                        {{ $order->id }}
+                                                        {{ $orders->firstItem() + $key }}
                                                     </td>
                                                     <td
                                                         class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">

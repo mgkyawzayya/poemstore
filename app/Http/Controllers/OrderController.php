@@ -114,7 +114,6 @@ class OrderController extends Controller
      */
     public function update(Request $request, Order $order)
     {
-        
         $order->update(['accepted' => true]);
 
         return redirect()->route('pending-orders.index')->with('message', 'Order Confirmation Completed.');
@@ -130,6 +129,6 @@ class OrderController extends Controller
     {
         $order->delete();
 
-        return redirect()->route('orders.index');
+        return redirect()->route('pending-orders.index');
     }
 }
