@@ -9,7 +9,7 @@
                 </div>
             </div>
             @if (session()->has('message'))
-            <div class="-ml-0 -mt-4 flex py-2 px-4 sm:px-2 lg:px-4">
+            <div class="center -ml-0 sm:mt-6 mt:4 flex py-2 px-4 sm:px-2 lg:px-4">
                 <div class="-ml-4 -mt-2 flex">
                     <div class="rounded-md bg-green-50 p-4">
                         <div class="flex">
