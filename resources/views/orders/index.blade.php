@@ -61,7 +61,7 @@
                                                 @endforeach
                                             </tbody>
                                         </table>
-                                        {{-- {{ $orders->links('vendor.pagination.tailwind') }} --}}
+                                        {{ $orders->links('vendor.pagination.tailwind') }}
                                     </div>
                                 </div>
                             </div>
